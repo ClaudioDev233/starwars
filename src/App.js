@@ -7,15 +7,11 @@ import Header from "./components/Header";
 
 
 function App() {
-  // useState
+  
 
   const [id, setId] = useState(1)
   const [info, setInfo] = useState('')
 
-
-
-  // useEffect para alterar título
-  
 useEffect(()=>{
   fetch(`https://swapi.dev/api/people/${id}/`)
   .then(resp => resp.json())
@@ -35,11 +31,10 @@ useEffect(()=>{
 },[id])
 
 function handleId(e){
-  const coiso = parseInt(e.target.value)
-  console.log(coiso)
-  setId(coiso)
+  const characterId = parseInt(e.target.value)
+  setId(characterId)
 }
-  // useEffect para alterar personagem
+ 
 
   return (
     <div>
