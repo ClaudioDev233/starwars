@@ -1,0 +1,31 @@
+.content {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 620px;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.card hr {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.card .person-data {
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+}
